@@ -3,6 +3,8 @@
     color: white;
 }
 
+
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -11,6 +13,13 @@ h1 {
     font-size: 3.5rem;
     line-height: 1.5;
     font-weight: 900;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 .container-fluid {
@@ -38,7 +47,10 @@ h1 {
 
 .img-container-sideways {
     transform: rotate(25deg);
-    width: 60%;
+}
+
+#iphone.img {
+    width: 50px;
 }
 
 .download-btn {
@@ -65,11 +77,40 @@ h1 {
     color: #8f8f8f;
 }
 
-#features .row {
-    margin: 5% 8% 5% 8%;
+#features, .carousel-item {
+    padding: 5% 15% 5% 15%;
     text-align: center;
 }
 
-.row .col-lg-4 {
+#features .row .col-lg-4 {
     padding: 5%;
+}
+
+#testimonials, #press {
+    background-color: #ef8172;
+    color: #fff;
+}
+
+#testimonials img {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+#press {
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+#press img {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+#pricing {
+    padding: 100px;
+}
+
+.pricing-col {
+    padding: 3% 2%;
 }
