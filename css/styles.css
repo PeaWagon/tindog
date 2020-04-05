@@ -3,8 +3,6 @@
     color: white;
 }
 
-
-
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -23,7 +21,7 @@ h2 {
 }
 
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 .navbar {
@@ -45,16 +43,20 @@ h2 {
     font-size: 1.2rem;
 }
 
-.img-container-sideways {
-    transform: rotate(25deg);
-}
-
-#iphone.img {
-    width: 50px;
-}
-
 .download-btn {
-    margin: 5% 3% 5% 0;
+    margin: 5% 3% 8% 0;
+}
+
+#iphone-img {
+    transform: rotate(25deg);
+    width: 60%;
+    position: absolute;
+    right: 30%;
+}
+
+#features {
+    position: relative;
+    background-color: white;
 }
 
 #features .fas {
@@ -89,6 +91,7 @@ h2 {
 #testimonials, #press {
     background-color: #ef8172;
     color: #fff;
+    position: relative;
 }
 
 #testimonials img {
