@@ -1,41 +1,71 @@
-#title {
-    background-color: #ff4c68;
-    color: white;
-}
-
 body {
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+p {
+    color: #8f8f8f;
+}
+
+/* Headings */
+
+.big-heading {
     font-size: 3.5rem;
     line-height: 1.5;
     font-weight: 900;
 }
 
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+.section-heading {
     font-size: 3rem;
     line-height: 1.5;
 }
 
+/* Containers */
+
 .container-fluid {
-    padding: 3% 15% 7%;
+    padding: 7% 15%;
 }
 
+/* Buttons */
+
+.download-btn {
+    margin: 5% 3% 8% 0;
+}
+
+/* Sections */
+
+.white-section {
+    background-color: #fff;
+}
+
+.pink-section {
+    background-color: #ff4c68;
+    color: white;
+}
+
+.orange-section {
+    background-color: #ef8172;
+    color: white;
+}
+
+/* Navigation Section */
+
 .navbar {
-    padding: 0px 0px 150px 0px;
+    padding: 0 0 4.5rem;
 }
 
 .navbar-brand {
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: 'Ubuntu', sans-serif;
 }
 
 .nav-item {
-    padding-left: 80px;
+    padding: 0 18px;
 }
 
 .nav-link {
@@ -43,20 +73,28 @@ h2 {
     font-size: 1.2rem;
 }
 
-.download-btn {
-    margin: 5% 3% 8% 0;
+/* Title Section */
+
+#title .container-fluid {
+    text-align: left;
+    padding: 3% 15% 7%;
 }
 
-#iphone-img {
+.title-img {
     transform: rotate(25deg);
     width: 60%;
     position: absolute;
     right: 30%;
 }
 
+/* Features Section */
+
+.feature-title {
+    font-size: 1.5rem;
+}
+
 #features {
     position: relative;
-    background-color: white;
 }
 
 #features .fas {
@@ -69,29 +107,11 @@ h2 {
     color: #ff4c68;
 }
 
-#features h3 {
-    font-size: 1.5rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-}
+/* Testimonials Section */
 
-#features p {
-    color: #8f8f8f;
-}
-
-#features, .carousel-item {
-    padding: 5% 15% 5% 15%;
-    text-align: center;
-}
-
-#features .row .col-lg-4 {
-    padding: 5%;
-}
-
-#testimonials, #press {
-    background-color: #ef8172;
-    color: #fff;
-    position: relative;
+.testimonials-text {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 #testimonials img {
@@ -100,8 +120,9 @@ h2 {
     margin: 20px;
 }
 
+/* Press Section */
+
 #press {
-    text-align: center;
     padding-bottom: 3%;
 }
 
@@ -109,6 +130,8 @@ h2 {
     width: 15%;
     margin: 20px 20px 50px;
 }
+
+/* Pricing Section */
 
 #pricing {
     padding: 100px;
@@ -118,45 +141,24 @@ h2 {
     padding: 3% 2%;
 }
 
-@media (max-width: 1515px) {
-
-    #title {
-        text-align: center;
-    }
-
-    #iphone-img {
-        position: static;
-        transform: rotate(0deg);
-    }
-
-
+.price-text {
+    font-size: 3rem;
+    line-height: 1/5;
 }
 
-#cta {
-    background-color: #ff4c68;
-    text-align: center;
-    padding: 10% 10%;
-}
-
-#cta h3  {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    font-size: 2.5rem;
-    color: white;
-}
-
-#cta .btn {
-    margin: 2% 1%;
-}
-
-#footer {
-    margin: 7%;
-    background-color: #fff;
-    text-align: center;
-    color: #8f8f8f;
-}
+/* Footer Section */
 
 #footer i {
-    color: black;
     margin: 1%;
+}
+
+@media (max-width: 1028px) {
+
+    .title-img {
+        position: static;
+        transform: rotate(0);
+    }
+    #title .container-fluid {
+        text-align: center;
+    }
 }
